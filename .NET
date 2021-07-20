@@ -1,0 +1,450 @@
+Console.WriteLine("Hello Vijay");
+
+
+
+Console.Write("Hii");
+Console.Write(" ");
+Console.Write("Harika");
+
+
+Console.WriteLine("This is the first line");
+
+Console.WriteLine("This is ");
+Console.Write("the second ");
+Console.Write("line.");
+
+
+Console.WriteLine(3);
+
+
+Console.WriteLine(true);
+Console.WriteLine(false);
+
+
+Console.WriteLine("123");
+Console.WriteLine(123);
+
+Console.WriteLine("true");
+Console.WriteLine(true);
+
+
+char userOpt;
+
+int numberOt;
+
+decimal particlesPerMillion;
+
+bool processedCustomer;
+
+
+string firstName;
+firstName = "Vj";
+
+
+string firstName;
+firstName = "Vicky";
+Console.WriteLine(firstName);
+
+
+string firstName;
+firstName = "v";
+Console.WriteLine(firstName);
+firstName = "j";
+Console.WriteLine(firstName);
+firstName = "A";
+Console.WriteLine(firstName);
+firstName = "Y";
+Console.WriteLine(firstName);
+
+
+var message = "vj";
+Console.WriteLine("message");
+
+
+string name = "Bob";
+int messages = 3;
+decimal temperature = 34.4m;
+
+Console.Write("Hello, ");
+Console.Write(name);
+Console.Write("! You have ");
+Console.Write(messages);
+Console.Write(" in your inbox. The temperature is ");
+Console.Write(temperature);
+Console.Write(" celsius.");
+
+
+Console.WriteLine("Hello\nWorld!");
+Console.WriteLine("Hello\tWorld!");
+
+Console.WriteLine("Hello \"World\"!");
+
+
+Console.WriteLine("c:\\source\\repos");
+
+
+Console.WriteLine("Generating invoices for customer \"ABC Corp\" ...\n");
+Console.WriteLine("Invoice: 1021\t\tComplete!");
+Console.WriteLine("Invoice: 1022\t\tComplete!");
+Console.WriteLine("\nOutput Directory:\t");
+
+
+Console.WriteLine("Generating invoices for customer \"ABC Corp\" ...\n");
+Console.WriteLine("Invoice: 1021\t\tComplete!");
+Console.WriteLine("Invoice: 1022\t\tComplete!");
+Console.WriteLine("\nOutput Directory:\t");
+Console.Write(@"c:\invoices");
+Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
+Console.WriteLine(@"c:\invoices\app.exe -j");
+
+
+string message = $"{greeting} {firstName}!";
+Console.WriteLine("message");
+
+
+string firstName = "Hi";
+string message = $"How are you {firstName}!";
+Console.WriteLine(message);
+
+
+string projectName = "ACME";
+string englishLocation = $@"c:\Exercise\{projectName}\data.txt";
+Console.WriteLine($"View English output:\n\t\t{englishLocation}\n");
+            
+string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+string russianLocation = $@"c:\Exercise\{projectName}\ru-RU\data.txt";
+Console.WriteLine($"{russianMessage}:\n\t\t{russianLocation}\n");
+
+
+string fName = "H";
+int widgetsSold = 12;
+Console.WriteLine(fName + " sold " + widgetsSold + " widgets.");
+
+int sum = 124 + 15446;
+int difference = 172728 - 16282;
+int product = 245 * 5;
+int quotient = 10 / 5;
+
+Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient);
+
+
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine("Decimal quotient: " + decimalQuotient);
+
+
+int first = 8;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+
+
+int value1 = 3 + 4 * 5 - 4;
+int value2 = (3 + 4) * (5 - 6);
+Console.WriteLine(value1);
+Console.WriteLine(value2);
+
+
+int value = 1;
+
+value = value + 1;
+Console.WriteLine("First increment: " + value);
+
+value += 5;
+Console.WriteLine("Second increment: " + value);
+
+value++;
+Console.WriteLine("Third increment: " + value);
+
+value = value - 1;
+Console.WriteLine("First decrement: " + value);
+
+value -= 1;
+Console.WriteLine("Second decrement: " + value);
+
+value--;
+Console.WriteLine("Third decrement: " + value);
+
+
+int value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine("Second: " + value++);
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value));
+
+
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine("The temperature is " + celsius + " Celsius.");
+
+
+Random roll = new Random();
+int occur = roll.Next(1, 7);
+Console.WriteLine(occur);
+
+
+Random dice = new Random();
+int roll1 = dice.Next();
+int roll2 = dice.Next(101);
+int roll3 = dice.Next(50, 101);
+
+Console.WriteLine($"First roll: {roll1}");
+Console.WriteLine($"Second roll: {roll2}");
+Console.WriteLine($"Third roll: {roll3}");
+
+
+int firstValue = 500;
+int secondValue = 600;
+int largerValue;
+largerValue = Math.Max(firstValue, secondValue);
+Console.WriteLine(largerValue);
+
+
+string message = "The quick brown fox jumps over the lazy dog.";
+bool result = message.Contains("dog");
+Console.WriteLine(result);
+
+if (message.Contains("fox"))
+{
+    Console.WriteLine("What does the fox say?");
+}
+
+
+Random dice = new Random();
+
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
+
+int total = roll1 + roll2 + roll3;
+
+Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
+
+if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
+{
+    Console.WriteLine("You rolled doubles! +2 bonus to total!");
+    total += 2;
+}
+
+if ((roll1 == roll2) && (roll2 == roll3)) 
+{
+    Console.WriteLine("You rolled triples! +6 bonus to total!");
+    total += 6;
+}
+
+if (total >= 15)
+{
+    Console.WriteLine("You win!");
+}
+
+if (total < 15)
+{
+    Console.WriteLine("Sorry, you lose.");
+}
+
+
+Random dice = new Random();
+
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
+
+int total = roll1 + roll2 + roll3;
+
+Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
+
+if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
+{
+    if ((roll1 == roll2) && (roll2 == roll3))
+    {
+        Console.WriteLine("You rolled triples!  +6 bonus to total!");
+        total += 6;
+    }
+    else
+    {
+        Console.WriteLine("You rolled doubles!  +2 bonus to total!");
+        total += 2;
+    }
+}
+
+if (total >= 16)
+{
+    Console.WriteLine("You win a new car!");
+}
+else if (total >= 10)
+{
+    Console.WriteLine("You win a new laptop!");
+}
+else if (total == 7)
+{
+    Console.WriteLine("You win a trip for two!");
+}
+else
+{
+    Console.WriteLine("You win a kitten!");
+}
+
+
+
+
+Random random = new Random();
+int daysUntilExpiration = random.Next(12);
+int discountPercentage = 0;
+
+if (daysUntilExpiration == 0)
+{
+    Console.WriteLine("Your subscription has expired.");
+}
+else if (daysUntilExpiration == 1)
+{
+    Console.WriteLine("Your subscription expires within a day!");
+    discountPercentage = 20;
+}
+else if (daysUntilExpiration <= 5)
+{
+    Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.");
+    discountPercentage = 10;
+}
+else if (daysUntilExpiration <= 10)
+{
+    Console.WriteLine("Your subscription will expire soon.  Renew now!");
+}
+
+if (discountPercentage > 0)
+{
+    Console.WriteLine($"Renew now and save {discountPercentage}%.");
+}
+
+
+
+
+string[] fraudulentOrderIDs = new string[3];
+
+fraudulentOrderIDs[0] = "A123";
+fraudulentOrderIDs[1] = "B456";
+fraudulentOrderIDs[2] = "C789";
+// fraudulentOrderIDs[3] = "D000";
+
+Console.WriteLine($"1: {fraudulentOrderIDs[0]}");
+Console.WriteLine($"2: {fraudulentOrderIDs[1]}");
+Console.WriteLine($"3: {fraudulentOrderIDs[2]}");
+
+
+string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+
+Console.WriteLine($"1: {fraudulentOrderIDs[0]}");
+Console.WriteLine($"2: {fraudulentOrderIDs[1]}");
+Console.WriteLine($"3: {fraudulentOrderIDs[2]}");
+
+fraudulentOrderIDs[0] = "F000";
+
+Console.WriteLine($"1: {fraudulentOrderIDs[0]}");
+
+Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
+
+
+
+string[] names = { "A", "B", "V" };
+foreach (string name in names)
+{
+    Console.WriteLine(name);
+}
+
+
+int[] inventory = { 200, 450, 700, 175, 250 };
+int sum = 0;
+int bin = 0;
+foreach (int items in inventory)
+{
+    sum += items;
+    bin++;
+    Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
+}
+Console.WriteLine($"We have {sum} items in inventory.");
+
+
+
+string[] orderIDs = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+
+foreach (string order in orderIDs)
+{
+    if (orderID.StartsWith("B"))
+    {
+        Console.WriteLine(orderID);
+    }
+}
+
+
+
+
+string firstName = "Bob";
+int widgetsPurchased = 7;
+// Testing
+ Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
+Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
+
+
+
+Random random = new Random();
+string[] orderIDs = new string[5];
+
+for (int i = 0; i < orderIDs.Length; i++)
+{
+    int prefixValue = random.Next(65, 70);
+    string prefix = Convert.ToChar(prefixValue).ToString();
+    string suffix = random.Next(1, 1000).ToString("000");
+
+    orderIDs[i] = prefix + suffix;
+}
+
+foreach (var orderID in orderIDs)
+{
+    Console.WriteLine(orderID);
+}
+
+
+
+// Example 1:
+Console
+.
+WriteLine
+(
+"Hi"
+)
+;
+
+// Example 2:
+string firstWord="Hi";string lastWord="V";Console.WriteLine(firstWord+" "+lastWord+"!");
+
+
+
+/*
+   This code reverses a message, counts the number of times 
+   a particular character appears, then prints the results
+   to the console window.
+ */
+
+string originalMessage = "The quick brown fox jumps over the lazy dog.";
+
+char[] message = originalMessage.ToCharArray();
+Array.Reverse(message);
+
+int letterCount = 0;
+
+foreach (char letter in message)
+{
+    if (letter == 'o')
+    {
+        letterCount++;
+    }
+}
+
+string newMessage = new String(message);
+
+Console.WriteLine(newMessage);
+Console.WriteLine($"'o' appears {letterCount} times.");
+
+
