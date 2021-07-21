@@ -24,7 +24,7 @@ namespace csharp
             Console.WriteLine(sum);
             Console.WriteLine(roll1);
             Console.WriteLine(roll2);
-            Console.WriteLine(roll3);
+            //Console.WriteLine(roll3);
 
         }
     }
