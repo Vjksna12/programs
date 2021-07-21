@@ -1,0 +1,19 @@
+using System;
+namespace whileLoop
+{
+    class example
+    {
+        static void Main()
+        {
+            Console.WriteLine("Enter the target");
+            int num = int.Parse(Console.ReadLine());
+            int a = 0;
+            Console.WriteLine("Even Numbers till the target are....");
+            while(a<=num)
+            {
+                Console.WriteLine(a);
+                a=a+2;
+            }
+        }
+    }
+}
