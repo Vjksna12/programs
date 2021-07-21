@@ -1,0 +1,16 @@
+using System;
+namespace Start
+{
+    class Example
+    {
+        static void Main()
+        {
+            Console.WriteLine("this is main method");
+            Main1();
+        }
+        static void Main1()
+        {
+            Console.WriteLine("This is a method");
+        }
+    }
+}
