@@ -1,0 +1,37 @@
+using System;
+namespace doWhileLoop
+{
+    class example
+    {
+        static void Main()
+        {
+            string userchoice=null;
+            do
+            {
+
+            
+            Console.WriteLine("Enter the target");
+            int num = int.Parse(Console.ReadLine());
+            int a = 0;
+            Console.WriteLine("Even Numbers till the target are....");
+            while(a<=num)
+            {
+                Console.WriteLine(a);
+                a=a+2;
+            }
+            do
+            {
+
+            
+            Console.WriteLine("Do you want to print another one");
+            userchoice=Console.ReadLine().ToUpper();
+            if(userchoice!="YES"&&userchoice!="NO")
+            {
+                Console.WriteLine("please enter valid value");
+            }
+            }while(userchoice!="YES"&&userchoice!="NO");
+
+        }while(userchoice=="YES");
+        }
+    }
+}
