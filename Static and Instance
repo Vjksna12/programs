@@ -1,0 +1,29 @@
+using System;
+namespace staticAndInstance
+{
+    class example
+    {
+        static void Main()
+        {
+            example.even();
+            example e =new example();
+            int sum=e.add(10,67);
+            Console.WriteLine("sum is {0}",sum);
+        } 
+        public int add(int a, int b)
+        {
+            return a+b;
+        }
+        public static void even()
+        {
+            int a=0;
+            while(a<=20)
+            {
+                Console.WriteLine(a);
+                a=a+2;
+            }
+        }
+
+          
+    }
+}
