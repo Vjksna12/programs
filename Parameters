@@ -1,0 +1,22 @@
+using System;
+namespace parameters
+{
+    class example
+    {
+        static void Main()
+        {
+            int total=0;
+            int mul=0;
+            example e =new example();
+            e.add(10,67,out total,out mul);
+            Console.WriteLine("total = {0} , mul = {1}",total,mul);
+        } 
+        public void add(int a, int b,out int sum,out int pro)
+        {
+            sum=a+b;
+            pro=a*b;
+        }
+
+          
+    }
+}
