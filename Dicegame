@@ -1,0 +1,31 @@
+using System;
+
+namespace csharp
+{
+    class DiceProgram
+    {
+        static void Main(string[] args)
+        {
+            Random dice= new Random();
+            int roll1 = dice.Next(1,10);
+            int roll2 = dice.Next(1,10);
+            int roll3 = dice.Next(1,10);
+            int sum = 0;
+            if((roll1==roll2) && (roll2==roll3))
+            {
+                sum=roll1+roll2+roll3+6;}
+                else if((roll1==roll2)||(roll2==roll3)||(roll3==roll1))
+                {
+                    sum=roll1+roll2+roll3+2;}
+                    else
+                    {
+                        sum=roll1+roll2+roll3;
+                    }
+            Console.WriteLine(sum);
+            Console.WriteLine(roll1);
+            Console.WriteLine(roll2);
+            Console.WriteLine(roll3);
+
+        }
+    }
+}
