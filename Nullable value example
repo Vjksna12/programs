@@ -1,0 +1,25 @@
+using System;
+namespace nullableValues
+{
+    class example
+    {
+        static void Main()
+        {
+            bool? b = null;
+            if(b==true)
+            {
+                Console.WriteLine("true");
+            }
+            else if(b==false)
+            {
+                Console.WriteLine("false");
+            
+            }
+            else{
+                Console.WriteLine("it is a null value");
+            }
+            
+
+        }
+    }
+}
