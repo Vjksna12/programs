@@ -1,0 +1,42 @@
+using System;
+namespace coffeeStore
+{
+    class example
+    {
+        static void Main()
+        {
+            int total = 0;
+            start:
+            Console.WriteLine("enter type of cofee you want \n 1.SMall \n 2.Large");
+            int num =int.Parse(Console.ReadLine());
+            switch(num)
+            {
+                case 1: 
+                total = total + 6;
+                break;
+                case 2:
+                total = total + 12;
+                break;
+                default:
+                Console.WriteLine("not between one and two");
+                goto start;
+            }
+            decision:
+            Console.WriteLine("Do you want to buy another coffee...? Please type yes or No");
+            string choice=Console.ReadLine();
+            switch(choice.ToUpper())
+            {
+                case "YES":
+                goto start;
+                case "NO":
+                Console.WriteLine("Thank you");
+                break;
+                default:
+                Console.WriteLine("Enter the correct value...");
+                goto decision;
+            }
+            Console.WriteLine("total bill is {0}",total);
+
+        }
+    }
+}
