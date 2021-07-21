@@ -1,0 +1,16 @@
+using System;
+namespace ifandUserInput 
+{
+    class example
+    {
+        static void Main()
+        {
+            int num =int.Parse(Console.ReadLine());
+            if(num>=5)
+            {
+                Console.WriteLine("Number is greater than 5 and num is {0}",num);
+            }
+
+        }
+    }
+}
