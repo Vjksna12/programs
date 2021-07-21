@@ -1,0 +1,13 @@
+using System;
+namespace verbatim
+{
+    class example
+    {
+        static void Main()
+        {
+            string name=@"c:\users\lenovo\desktop\vijay";
+            Console.WriteLine(name);
+
+        }
+    }
+}
