@@ -1,0 +1,33 @@
+using System;
+namespace inheritance
+{
+    class example
+    {
+        static void Main()
+        {
+            derivedclass dd=new derivedclass();
+        }
+
+          
+    }
+    public class parentclass
+    {
+        
+        public parentclass()
+        {
+            Console.WriteLine("Parent");
+        }
+        public parentclass(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+    public class derivedclass:parentclass
+    {
+        public derivedclass():base("hello")
+        {
+            Console.WriteLine("derived");
+        }
+
+    }
+}
