@@ -1,0 +1,46 @@
+using System;
+namespace polyMorphism
+{
+    class example
+    {
+        static void Main()
+        {
+            employee[] e=new employee[3];
+            e[0]=new employee();
+            e[1]=new fullEmp();
+            e[2]=new partemp();
+            foreach(employee es in e)
+            {
+                es.fullname();
+            }
+            
+        }
+
+          
+    }
+    public class employee
+    {
+        public string fname="FN";
+        public string lname="LN";
+        public virtual void fullname()
+        {
+            Console.WriteLine(fname+" "+lname);
+        }
+
+    }
+    public class fullEmp:employee
+    {
+        public override void fullname()
+        {
+            Console.WriteLine(fname+" "+lname+"-full");
+        }
+    }
+    public class partemp:employee
+    {
+        public override void fullname()
+        {
+            Console.WriteLine(fname+" "+lname+"-part");
+        }
+
+    }
+}
