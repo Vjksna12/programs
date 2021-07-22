@@ -1,0 +1,43 @@
+using System;
+namespace dataHiding
+{
+    class example
+    {
+        static void Main()
+        {
+            fullEmp fe=new fullEmp();
+            fe.fname="fulltime";
+            fe.lname="employee";
+            fe.fullname();
+
+            partemp pe=new partemp();
+            pe.fname="part time";
+            pe.lname="employee";
+            pe.fullname();
+        }
+
+          
+    }
+    public class employee
+    {
+        public string fname;
+        public string lname;
+        public void fullname()
+        {
+            Console.WriteLine(fname+" "+lname);
+        }
+
+    }
+    public class fullEmp:employee
+    {
+        
+        /*public new void fullname()
+        {
+            Console.WriteLine("Parent");
+        }*/
+    }
+    public class partemp:employee
+    {
+
+    }
+}
