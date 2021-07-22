@@ -1,0 +1,33 @@
+using System;
+namespace classAndConstructor
+{
+    class example
+    {
+        static void Main()
+        {
+            customer e= new customer();
+            customer e1=new customer("hi","vijay");
+            e.fullName();
+            e1.fullName();
+        }
+
+          
+    }
+    class customer
+    {
+        string first;
+        string last;
+        public customer():this("firstname","lastname")
+        {
+        }
+        public customer(string firstname,string lastname)
+        {
+            this.first=firstname;
+            this.last=lastname;
+        }
+        public void fullName()
+        {
+            Console.WriteLine("full name is {0}",this.first+" "+this.last);
+        }
+    }
+}
