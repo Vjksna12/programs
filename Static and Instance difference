@@ -1,0 +1,32 @@
+using System;
+namespace staticAndInstance 
+{
+    class example
+    {
+        static void Main()
+        {
+            area a= new area(6);
+            float total=a.calculate();
+            Console.WriteLine("area of circle is {0}",total);
+        }
+
+          
+    }
+    class area
+    {
+        static float pi;
+        int radius;
+        static area()
+        {
+            area.pi=3.1425f;
+        }
+        public area(int Radius)
+        {
+            this.radius=Radius;
+        }
+        public float calculate()
+        {
+            return area.pi*this.radius*this.radius ;
+        }
+    }
+}
