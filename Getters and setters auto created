@@ -1,0 +1,63 @@
+using System;
+namespace getSet
+{
+    class example
+    {
+        static void Main()
+        {
+            employee e=new employee();
+            e.Setid(101);
+            Console.WriteLine("Employee id = {0}",e.Getid());
+            e.Name="viaj";
+            Console.WriteLine("Employee name = {0}",e.Name);
+            Console.WriteLine("Employee = {0}",e.Getmarks());
+        }
+
+          
+    }
+    public class employee
+    {
+        private string name;
+        private int id;
+        private int passmark=35;
+        public string Name
+        {
+            set
+            {
+               if(string.IsNullOrEmpty(value))
+                  {
+                   throw new Exception("No Name is there");
+                   }
+                    this.name=value;
+             }
+            get{
+                  if(string.IsNullOrEmpty(this.name))
+                    {
+                      return "no name";
+                    }
+                     else
+                       {
+                         return this.name;
+                        }
+
+             }
+        }
+    
+        public void Setid(int Id)
+        {
+            if(Id<0)
+            {
+                throw new Exception("id cannot be neagtive");
+            }
+            this.id=Id;
+        }
+        public int Getid()
+        {
+            return this.id;
+        }
+        public int Getmarks()
+        {
+            return this.passmark;
+        }
+    }
+}
