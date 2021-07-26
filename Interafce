@@ -1,0 +1,35 @@
+using System;
+namespace interFace
+{
+    public class example
+    {
+        public static void Main()
+        {
+            customer C1=new customer();
+            C1.print();
+            C1.hello();
+           
+        }
+
+          
+    }
+    
+    interface Icustomer{
+        void print();
+
+    } 
+    interface I2:Icustomer{
+        void print2();
+    }
+    class customer : I2
+    {
+        public void print()
+        {
+            Console.WriteLine("Hello");
+        }
+        public void print2()
+        {
+            Console.WriteLine("I2 is implementing");
+        }
+    }
+}
