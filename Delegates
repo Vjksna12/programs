@@ -1,0 +1,17 @@
+using System;
+namespace deleGates
+{
+    public class example
+    {
+        public static void Main()
+        {
+           Hellodunctiondelegate del=new Hellodunctiondelegate(hello);
+           del("vijay is calling a delegate");
+        }
+        public static void hello(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+    }
+    public delegate void Hellodunctiondelegate(string message);
+}
