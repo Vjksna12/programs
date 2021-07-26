@@ -1,0 +1,32 @@
+using System;
+using System.IO;
+namespace exCeprtions
+{
+    public class example
+    {
+
+        public static void Main()
+        {
+            try
+            {
+                StreamReader stream=new StreamReader(@"C:\Users\lenovo\Downloads\aravind\ReadMe.txt");;
+                Console.WriteLine(stream.ReadToEnd());
+                stream.Close();
+
+
+            }
+            catch(FileNotFoundException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine();
+                Console.WriteLine(ex.StackTrace);
+            }
+            
+        }
+
+            
+                    
+                    
+        
+    }
+}
