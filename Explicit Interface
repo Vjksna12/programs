@@ -1,0 +1,35 @@
+using System;
+namespace explicitInterface
+{
+    public class example
+    {
+        public static void Main()
+        {
+            customer C1=new customer();
+            ((Icustomer)C1).print();
+            ((I2)C1).print();
+           
+        }
+
+          
+    }
+    
+    interface Icustomer{
+        void print();
+
+    } 
+    interface I2:Icustomer{
+        void print();
+    }
+    class customer : I2
+    {
+        void Icustomer.print()
+        {
+            Console.WriteLine("Hello");
+        }
+        void I2.print()
+        {
+            Console.WriteLine("I2 is implementing");
+        }
+    }
+}
