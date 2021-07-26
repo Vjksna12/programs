@@ -1,0 +1,28 @@
+using System;
+namespace abstractClass
+{
+    public class example
+    {
+        public static void Main()
+        {
+            customer C1=new customer();
+            C1.print();
+           
+        }
+
+          
+    }
+    
+    class customer : customer1
+    {
+        public override void print()
+        {
+            Console.WriteLine("Hello");
+        }
+       
+    }
+    abstract class customer1
+    {
+        public abstract void print();
+    }
+}
