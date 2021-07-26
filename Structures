@@ -1,0 +1,50 @@
+using System;
+namespace struCtures
+{
+    public class example
+    {
+        public static void Main()
+        {
+            customer C1=new customer(101,"Vijay");
+            customer c2=new customer();
+            c2.ID=102;;
+            c2.NAME="Vicky";
+            C1.Printdetails();
+            c2.Printdetails();
+            customer c3=new customer
+            {
+                ID=103,
+                NAME="Krishna"
+            };
+            c3.Printdetails();
+        }
+
+          
+    }
+    
+    public struct customer{
+        private int _id;
+        private string _name;
+
+        public int ID{
+            get { return _id;}
+            set { this._id=value;}
+        }
+        public string NAME{
+            get { return _name;}
+            set {this._name=value;}
+        }
+        public customer(int ID,string NAME)
+        {
+            this._id=ID;
+            this._name=NAME;
+        }
+        public void Printdetails()
+        {
+            Console.WriteLine("ID is {0} Name is {1}",this.ID,this.NAME );
+
+        }
+
+
+    }
+}
