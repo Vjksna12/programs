@@ -1,0 +1,42 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+namespace lisT
+{
+    public class example
+    {
+
+        public static void Main()
+        {
+            customer cust1=new customer()
+            {
+                ID=101,Name="vicky",Sal=5000
+            };
+            customer cust2=new customer()
+            {
+                ID=102,Name="Kriushna",Sal=8000
+            };
+            customer cust3=new customer()
+            {
+                ID=103,Name="Pradhan",Sal=9000
+            };
+            List<customer> customers = new List<customer>(2);
+            customers.Add(cust1);
+            customers.Add(cust2);
+            customers.Add(cust3);
+            foreach(customer cust in customers)
+            {
+                Console.WriteLine("id is {0}",cust.ID);
+            }
+        }
+
+    }
+    public class customer
+    {
+        public int ID{get;set;}
+        
+        public string Name{get;set;}
+        
+        public int Sal{get;set;}
+    }
+}
